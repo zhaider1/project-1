@@ -37,8 +37,8 @@ h1 {
   padding-bottom: 0.516em; /* 22 / 42.635 = 0.516 */
   margin: 0;
   font-family: sans-serif;
-  font-weight: lighter;
-  font-style: italic;
+  font-weight: bolder;
+  font-style: normal;
 }
 ul li {
   padding-bottom: 1.25em;
