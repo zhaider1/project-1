@@ -13,7 +13,7 @@ $('#form').on('submit',
     }
     else {
       if(!$('#name-bad').length){
-        $('#name-get').append('<li id="name-bad">Enter A Valid Email Please!/li>');
+        $('#name-get').append('<li id="name-bad">Enter A Name Please!</li>');
       }
     }
 
@@ -24,13 +24,14 @@ $('#form').on('submit',
     }
     else{
       if(!$('email-bad').length){
-        $('#email-get').append('<li id="email-bad"> Invalid Email Adress! Please enter a Valid Address<li>');
+        $('#email-get').append('<li id="email-bad"> Invalid Email Adress! Please enter a Valid Address</li>');
       }
     }
     if(trueName && trueEmail){
       $(this).remove();
-      $('#submitted').append('<h1 id="thanks"> Thanks For Joining The Community!');
-      $('#submitted').append('<li> You will recive the letter at: ' + email.val + '</li>');
+      $('#Persuasion').append('<h1 id="thanks"> Thanks For Joining The Community!');
+      $('#Persuasion').append('<li> You will recieve letters at :' + ' ' + email + '</li>');
+
     }
   }
 );
