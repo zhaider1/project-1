@@ -185,15 +185,13 @@ html {
   line-height: 1.2em; /* 24 / 20 = 1.2 */
   color: white;
   background: BLACK;
-  background-position: center;
-  background-size: cover;
-  /* background: rgba(34,146,174, 1); */
+  padding-left: 1.5em;
 }
 body {
   padding-top: 2.444rem; /*  44 / 18 = 2.444 */
-  padding-right: 0.6em; /* 12 / 20 = 1.222*/
-  padding-left: 0.6em; /* 12/20 = 1.222*/
-  padding-bottom: 15.888rem; /*  286 / 18 = 15.888 */
+  padding-right: 1.333em; /* 24 / 18 = 1.222*/
+  padding-left: 1.333em; /* 24/18 = 1.222*/
+  padding-bottom: 1.5888rem; /*  286 / 18 = 15.888 */
 }
 h1 {
   font-size: 1.5em; /*   30 / 20 = 1.833 */
@@ -213,14 +211,7 @@ p {
 input :: placeholder {
   color: yellow;
 }
-form {
-  padding: 0.888rem 0; /*  16 / 18 = .888 */
-  padding-left: 10%;
-  padding-right: 5%;
-  box-sizing: border-box;
-  border: 0.111rem solid rgba(30,144,255, 1); /* NOTE: 2 / 18 = .111 */
-  /* box-shadow: 10px  10px 50px white; */
-}
+
 li {
   padding-top: 1em; /* 15 / 15 */
   padding-bottom: 1.222rem; /* 22 / 18 = 1.222*/
