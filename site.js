@@ -1,4 +1,3 @@
-$.noConflict();
 $('#form').on('submit',
   function(e) {
     var name = $('#name').val();
@@ -7,13 +6,6 @@ $('#form').on('submit',
     var trueName = false;
     var trueEmail = false;
     e.preventDefault();
-
-    if(trueName && trueEmail){
-      $(this).remove();
-      $('#submitted').append('<h1 id="thanks"> Thanks For Joining The Community!')
-      $('#submitted').append('<li> You will recive the letter at: ' + email.val + '</li>');
-
-    }
 
     if(name.length > 0){
       trueName =true;
@@ -28,12 +20,17 @@ $('#form').on('submit',
     if (emcheck.test(email))
     {
       trueEmail = true;
-      #('#email-bad').remove();
+      $('#email-bad').remove();
     }
     else{
       if(!$('email-bad').length){
         $('#email-get').append('<li id="email-bad"> Invalid Email Adress! Please enter a Valid Address<li>');
       }
     }
+    if(trueName && trueEmail){
+      $(this).remove();
+      $('#submitted').append('<h1 id="thanks"> Thanks For Joining The Community!');
+      $('#submitted').append('<li> You will recive the letter at: ' + email.val + '</li>');
+    }
   }
-)
+);
