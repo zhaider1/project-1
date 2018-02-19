@@ -206,29 +206,28 @@ h1 {
 p {
   font-size: 1.222em; /* 22 / 18 = 1.222*/
   font-weight: bold;
-  line-height: 1.833rem; /*   33 / 18 = 1.833 */
-  margin-bottom: 1.2em;
-}
+  max-width :38.8em;
+  padding-bottom: 1em;
 
+}
+input :: placeholder {
+  color: yellow;
+}
 form {
-  padding: 0.888rem 0; /* NOTE: 16 / 18 = .888 */
+  padding: 0.888rem 0; /*  16 / 18 = .888 */
   padding-left: 10%;
   padding-right: 5%;
   box-sizing: border-box;
   border: 0.111rem solid rgba(30,144,255, 1); /* NOTE: 2 / 18 = .111 */
   /* box-shadow: 10px  10px 50px white; */
 }
-label {
-  display: block;
-  color: white;
-}
 li {
+  padding-top: 1em; /* 15 / 15 */
   padding-bottom: 1.222rem; /* 22 / 18 = 1.222*/
 }
 input,
 label {
   display: block;
-  margin-bottom: 0.611rem; /* NOTE: 11 / 18 = 0.611 */
 }
 input {
   box-sizing: border-box;
@@ -243,26 +242,11 @@ input {
   background: none;
   color: #DB4E58;
 }
-img P
+img P{
 display:block;
 max-width: 100%;
+}
 
-input::placeholder {
-  color: #DB4E58;
-  opacity: 1;
-}
-input[type="date"] {
-  color: #DB4E58;
-}
-input[type="submit"] {
-  font-size: 0.888rem; /* NOTE: .888 */
-  background: #7A7A7A;
-  color: white;
-  border: none;
-  width: 50%;
-  font-weight: bold;
-  float: right;
-}
 
 /* Layout Styles */
 /*
