@@ -7,7 +7,7 @@ $('#form').on('submit',
     var trueEmail = false;
     e.preventDefault();
 
-    if(name.length > 0){
+    if(name.length > 0 || name.length == null){
       trueName =true;
       $('#name-bad').remove();
     }

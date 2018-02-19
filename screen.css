@@ -1,15 +1,178 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* stylelint-disable*/
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-disable */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,
+nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,
+menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
 /* stylelint-enable */
 
-/* Begin site styles below */
 
 /* Base Styles */
-
 /*
   Hint: these tend to be
   1. element selectors
@@ -18,39 +181,138 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
-  font-size: 1.125em; /* 18 / 16 = 1.125 */
-  line-height: 1.33em; /* 24 / 18 */
+  font-size: 1.25em; /* 20 / 16 = 1.25 */
+  line-height: 1.2em; /* 24 / 20 = 1.2 */
+  color: white;
+  background: BLACK;
+  background-position: center;
+  background-size: cover;
+  /* background: rgba(34,146,174, 1); */
 }
 body {
-  padding-top: 2em; /* 48/18 */
-  padding-right: 1em;
-  padding-left: 1em;
-  background-color: red;
-}
-h1,
-p {
-  padding-bottom: 1.25em; /* 18 / 16 = 1.125 */
+  padding-top: 2.444rem; /*  44 / 18 = 2.444 */
+  padding-right: 0.6em; /* 12 / 20 = 1.222*/
+  padding-left: 0.6em; /* 12/20 = 1.222*/
+  padding-bottom: 15.888rem; /*  286 / 18 = 15.888 */
 }
 h1 {
-  font-size: 2.369em; /* 42.635 / 18 = 2.369 */
-  line-height: 1.032em; /* 44 / 42.635 = 1.032 */
-  padding-bottom: 0.516em; /* 22 / 42.635 = 0.516 */
-  margin: 0;
-  font-family: sans-serif;
-  font-weight: bolder;
-  font-style: normal;
-}
-ul li {
-  padding-bottom: 1.25em;
-  display: block;
+  font-size: 1.5em; /*   30 / 20 = 1.833 */
+  line-height: 1.5em; /*   30 /20 = 1.833 */
+  padding-bottom: 0.667em; /* 12 / 18 = 1.222*/
+  font-weight: bold;
+  color: #228B22;
 }
 
+p {
+  font-size: 1.222em; /* 22 / 18 = 1.222*/
+  font-weight: bold;
+  line-height: 1.833rem; /*   33 / 18 = 1.833 */
+  margin-bottom: 1.2em;
+}
+
+form {
+  padding: 0.888rem 0; /* NOTE: 16 / 18 = .888 */
+  padding-left: 10%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  border: 0.111rem solid rgba(30,144,255, 1); /* NOTE: 2 / 18 = .111 */
+  /* box-shadow: 10px  10px 50px white; */
+}
+label {
+  display: block;
+  color: white;
+}
+li {
+  padding-bottom: 1.222rem; /* 22 / 18 = 1.222*/
+}
+input,
+label {
+  display: block;
+  margin-bottom: 0.611rem; /* NOTE: 11 / 18 = 0.611 */
+}
+input {
+  box-sizing: border-box;
+  width: 100%;
+  border: 0.111rem solid rgba(30,144,255, 0.7); /* NOTE: 2 / 18 = .111 */
+  border-top: none;
+  border-right: none;
+  cursor: pointer;
+  border-radius: 0.277em;
+  line-height: 1;
+  padding: 0.611rem; /* NOTE: 11 / 18 = .611 */
+  background: none;
+  color: #DB4E58;
+}
+img P
+display:block;
+max-width: 100%;
+
 input::placeholder {
-  color: green;
+  color: #DB4E58;
+  opacity: 1;
+}
+input[type="date"] {
+  color: #DB4E58;
+}
+input[type="submit"] {
+  font-size: 0.888rem; /* NOTE: .888 */
+  background: #7A7A7A;
+  color: white;
+  border: none;
+  width: 50%;
+  font-weight: bold;
+  float: right;
 }
 
 /* Layout Styles */
+/*
+  Hint: these tend to be
+  1. IDs; but also classes, sometimes
+  2. concerned with layout and spatial
+     relationships
+*/
 
 /* Modular Styles */
+/*
+  Repeating style patterns.
+  Hint: these tend to be:
+  1. classes and relationship selectors
+  2. concerned with adjustments to base styles,
+      spacing, color, etc. etc.
+*/
 
 /* State Styles */
+/*
+  States of the browser and user access
+  conditions.
+  Hint: these tend to be:
+  1. Driven by media queries
+  2. Influenced by JavaScript
+  3. Organized by Base, Layout, Module, State
+*/
+
+@media screen and (min-width: 375px) {
+  body {
+    padding-left: 0.064em; /* 24/375 */
+    padding-right: 0.064em; /* 24/375 */
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 1.2em;
+  }
+  body {
+    padding-left: 0.1281em; /* 82/640 */
+    padding-right: 0.1281em; /* 82/640 */
+  }
+}
+
+
+@media screen and (min-width: 860px) {
+  body {
+    padding-left: 0.058em;
+    padding-right: 0.058em;
+  }
+
+}
