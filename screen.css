@@ -232,17 +232,24 @@ label {
 input {
   box-sizing: border-box;
   width: 100%;
-  border: 0.111rem solid rgba(30,144,255, 0.7); /* NOTE: 2 / 18 = .111 */
-  border-top: none;
-  border-right: none;
-  cursor: pointer;
-  border-radius: 0.277em;
+  border: 0;
   line-height: 1;
-  padding: 0.611rem; /* NOTE: 11 / 18 = .611 */
+  padding: 0.611rem; /*  11 / 18 = .611 */
   background: none;
-  color: #DB4E58;
+  color: yellow;
+  border-radius: 0.667em;
 }
-img P{
+form ol,
+form ol li {
+  list-style-type: none;
+}
+#submit {
+  border-radius: 0.5em;
+  background-color: purple;
+  color: yellow;
+}
+}
+img {
 display:block;
 max-width: 100%;
 }
