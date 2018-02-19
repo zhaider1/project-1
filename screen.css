@@ -184,7 +184,7 @@ html {
   font-size: 1.25em; /* 20 / 16 = 1.25 */
   line-height: 1.2em; /* 24 / 20 = 1.2 */
   color: white;
-  background: BLACK;
+  background: black;
   padding-left: 1.5em;
 }
 body {
@@ -204,11 +204,11 @@ h1 {
 p {
   font-size: 1.222em; /* 22 / 18 = 1.222*/
   font-weight: bold;
-  max-width :38.8em;
+  max-width: 38.8em;
   padding-bottom: 1em;
 
 }
-input :: placeholder {
+input::placeholder {
   color: yellow;
 }
 
@@ -216,6 +216,7 @@ li {
   padding-top: 1em; /* 15 / 15 */
   padding-bottom: 1.222rem; /* 22 / 18 = 1.222*/
 }
+
 input,
 label {
   display: block;
@@ -239,10 +240,10 @@ form ol li {
   background-color: purple;
   color: yellow;
 }
-}
+
 img {
-display:block;
-max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 
